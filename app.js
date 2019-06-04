@@ -9,6 +9,7 @@ app.get('/', function (req, res) {
   const result = calculatorService.sum(Number(numberOne), Number(numberTwo));
 
   res.send(`You result is ${result}`);
+  console.log('2')
 })
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
